@@ -3,14 +3,13 @@ import {
   StyleSheet,
   View,
   TextInput,
-  Button,
   TouchableOpacity,
   Text,
 } from "react-native";
 
-interface Props {
+type Props = {
   addItem: (item: string) => void;
-}
+};
 
 const CreateItem = ({ addItem }: Props) => {
   const [text, setText] = useState("");

@@ -8,11 +8,11 @@ import {
   ScrollView,
 } from "react-native";
 
-interface Props {
+type Props = {
   items: string[];
   deleteItem: (index: number) => void;
   updateItem: (index: number, newItem: string) => void;
-}
+};
 const DisplayItems = ({ items, deleteItem, updateItem }: Props) => {
   const [editIndex, setEditIndex] = useState<number | null>(null);
   const [editedItem, setEditedItem] = useState<string>("");
