@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text, Button, Alert } from "react-native";
+import { StyleSheet, View, Text, Button, Alert, Image } from "react-native";
 import CreateItem from "../../components/CreateItem";
 import DisplayItems from "../../components/DisplayItems";
 
@@ -22,6 +22,10 @@ export default function Demo() {
 
   return (
     <View style={styles.container}>
+      <Image
+        source={require("../../assets/image.png")}
+        style={{ width: "100%", height: "20%" }}
+      />
       <Text style={styles.title}>CRUD APP</Text>
       <CreateItem addItem={addItem} />
       <DisplayItems
